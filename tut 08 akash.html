@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- form is very important in html -->
+    <title>Forms</title>
+  </head>
+  <!-- div is used for break the line ,input values are -number,checkbox,radio(only one is selected),date,text,email,submit,reset,etc -->
+  <!-- all are exist in form tag  -->
+  <body>
+    <form action="backend.php">
+      <h2>This is HTML form tutorial</h2>
+      <!-- label is used for highlight -->
+      <label for="name">Name:</label>
+      <div><input type="text" name="my name" id="name" /></div>
+      <br />
+      <label for="role">Role</label>
+      <div><input type="text" name="my role" id="role" /></div>
+      <br />
+      <div>Email:<input type="email" name="my email" /></div>
+      <br />
+      <div>
+        Are you eligible: <input type="checkbox" name="my eligibility" />
+      </div>
+      <br />
+      <div>Date: <input type="date" name="date " /></div>
+      <br />
+      <div>
+        Gender: Male <input type="radio" name="my gender" /> Female
+        <input type="radio" name="my gender" />
+      </div>
+      <br />
+      <div>Bonus: <input type="number" name="my bonus" /><br /></div>
+      <br />
+      <!-- textarea is space for write something -->
+      <div>
+        write about yourself: <br />
+        <textarea name="my text" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="submit now" />
+        <input type="reset" value="Reset now" />
+      </div>
+      <br />
+    </form>
+  </body>
+</html>

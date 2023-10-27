@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo selectors, button and more designing</title>
+    <style>
+      .container {
+        border: 4px solid red;
+        background-color: aqua;
+        padding: 34px;
+        margin: 34px /*for centre margin*/ auto;
+        width: 666px;
+      }
+      a {
+        /*to remove the line under read more */
+        text-decoration: none;
+      }
+      /* a hover ka matlab hoga ki hum jab a ki element pe arrow leke jaye to kya ho */
+      a:hover {
+        color: hsl(0, 13%, 95%);
+        background-color: orange;
+      }
+      a:visited{
+        background-color: blue;
+      }
+      a:active{
+        background-color: pink;
+      }
+      button:hover {
+        color: white;
+        background-color: orange;
+      }
+      .btn {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(144, 13, 15);
+        padding: 6px;
+        border: none;
+        /*curser pointer means cursor ho jaye .btn ke element me*/
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont1">
+      <h3>this is my heading</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nostrum
+        minima vitae nihil molestias porro dolorum fuga tempora odio incidunt
+        autem tempore dolore delectus explicabo, eligendi voluptatem, itaque
+        laudantium facere!
+      </p>
+      <!-- for link -->
+      <a href="https://facebook.com" class="btn">Read more</a>
+      <button class="btn">contact us</button>
+    </div>
+  </body>
+</html>
